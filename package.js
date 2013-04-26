@@ -9,7 +9,9 @@ Package.on_use(function(api) {
   api.use('http', ['client', 'server']);
   api.use('templating', 'client');
 
-
-  //api.add_files([], 'client)
+  api.add_files(['dropbox_configure.html', 'dropbox_configure.js'], 'client');
+  api.add_files('dropbox_common.js', ['client', 'server']);
+  api.add_files('dropbox_server.js', 'server');
+  api.add_files('dropbox_client.js', 'client');
 
 });

@@ -1,7 +1,12 @@
 
 Accounts.oauth.registerService('dropbox', 1, function(oauthBinding) {
-  var identity = oauthBinding.get('https://api.dropbox.com/1/account/info').data;
+  console.log(oauthBinding);
+  //console.log(Accounts.oauth1._requestTokens);
+  //console.log('oauthbindng, ', oauthbindng);
+  console.log('yeaaaa');
 
+  var identity = oauthBinding.get('https://api.dropbox.com/1/account/info').data;
+  console.log(identity);
   var serviceData = {
     referral_link     : identity.referral_link,
     display_name      : identity.display_name,

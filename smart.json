@@ -1,0 +1,9 @@
+{
+  "name"       : "accounts-dropbox",
+  "description": "dropbox oauth support",
+  "homepage"   : "https://github.com/cultofmetatron/accounts-dropbox",
+  "author"     : "Peter de Croos (http://blog.peterdecroos.com)",
+  "version"    : "0.0.0",
+  "git"        : "https://github.com/cultofmetatron/accounts-dropbox.git"
+}
+
