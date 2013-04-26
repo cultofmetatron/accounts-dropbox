@@ -25,16 +25,20 @@ Meteor.loginWithDropbox = function(options, callback) {
 
   //url to app
   console.log(options);
-  var url = '/_oauth/dropbox/?requestTokenAndRedirect=' +
-    encodeURIComponent(callbackUrl) +
+  var url = '/_oauth/dropbox?requestTokenAndRedirect=' +
+    callbackUrl +
     '&state=' + state;
 
+  /*
   oldCallback = callback;
+
   callback = function() {
+    console.log(arguments);
     //desperate times call for desperate measures
     console.log('called ', this);
-    oldCallback();
+    oldCallback(arguments);
   };
+  */
 
   console.log(callbackUrl);
   console.log(encodeURIComponent(callbackUrl));
