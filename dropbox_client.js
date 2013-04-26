@@ -22,9 +22,10 @@ Meteor.loginWithDropbox = function(options, callback) {
   var callbackUrl = Meteor.absoluteUrl(DROPBOX_CALLBACK + '?close&state=' + state);
 
   //url to app
-  var url = DROPBOX_CALLBACK + '?requestTokenAndRedirect='
+  var url = '/' + DROPBOX_CALLBACK + '?request_tokenAndRdirect='
     + encodeURIComponent(callbackUrl)
     + '&state=' + state;
+
 
   Accounts.oauth.initiateLogin(state, url, callback);
 };
